@@ -62,7 +62,7 @@ This project was created to practice React development, state management with Co
 ## 🙋 About the Author
 
 **Luis Fernando Vargas**  
-Frontend Web Developer  
+Web Developer  
 🔗 [GitHub Profile](https://github.com/Luis-Fernando-Vargas)  
 🌍 Portfolio: _Coming soon_  
 
