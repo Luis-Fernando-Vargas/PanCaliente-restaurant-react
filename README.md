@@ -31,10 +31,9 @@ This project was created to practice React development, state management with Co
 ---
 
 ## 🖼️ Screenshot
-
+![pancaliente 1](https://github.com/user-attachments/assets/06aebf36-8c59-403a-8bd0-540b639bf6a7)
 ![pancaliente 3](https://github.com/user-attachments/assets/f33cdd16-e501-4347-b716-e164c4bc28d7)
 ![pancaliente 2](https://github.com/user-attachments/assets/e67018de-7cda-4939-8189-c87e6e3ee51a)
-![pancaliente 1](https://github.com/user-attachments/assets/06aebf36-8c59-403a-8bd0-540b639bf6a7)
 ![pancaliente 4](https://github.com/user-attachments/assets/93f0ca51-af19-4446-b0b9-15641a59e026)
 
 ---
