@@ -1,0 +1,43 @@
+.general-info {
+  background: var(--primary);
+  color: var(--white);
+  padding: 6rem 0;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+}
+
+.info h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--yellow);
+}
+
+.info p {
+  margin-bottom: 1.5rem;
+}
+
+.social-foot i {
+  color: var(--white);
+}
+
+.info input[type="email"] {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer {
+  background: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.4rem;
+}
+
+/* ===== MEDIA QUERIES ===== */

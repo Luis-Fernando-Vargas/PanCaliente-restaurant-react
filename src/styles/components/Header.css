@@ -1,0 +1,230 @@
+.header-main {
+  position: relative;
+}
+
+/* Barra de navegación superior */
+.container-nav {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1.5rem 0;
+  position: relative;
+  z-index: 100;
+}
+
+.content-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.logo h2 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo h3 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+/* Colores exactos para "Colombian Restaurant" */
+.logo h3 span.yellow {
+  color: var(--yellow);
+}
+
+.logo h3 span.blue {
+  color: var(--blue);
+}
+
+.logo h3 span.red {
+  color: var(--red);
+}
+
+/* Navegación */
+.navigation {
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation a {
+  color: var(--white);
+  font-weight: 600;
+  position: relative;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--yellow);
+  transition: width 0.3s ease;
+}
+
+.navigation a:hover::after {
+  width: 100%;
+}
+
+/* Contenedor del video */
+.content-header {
+  width: 100%;
+  height: calc(100vh - 200px);
+  position: relative;
+}
+
+.container-header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Texto "Welcome!" y botón superpuestos */
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--white);
+  z-index: 2;
+  width: 100%;
+}
+
+.header-text h2 {
+  font-size: 7rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header-text a {
+  font-size: 2rem;
+  color: #fff;
+  border: 0.4rem solid var(--white);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* Video de fondo */
+.content-header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* ===== MENÚ HAMBURGUESA CORREGIDO ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 110;
+  position: relative;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--white);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 90;
+  display: none;
+}
+
+.btn-close {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  color: var(--white);
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+  z-index: 105;
+}
+
+/* ===== BOTONES ===== */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.edges {
+  border-radius: 0;
+}
+
+.blue-btn {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.red-btn {
+  background: var(--red);
+  color: var(--white);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.icons-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.cart-button:hover {
+  color: var(--primary-color, #ff5733);
+}

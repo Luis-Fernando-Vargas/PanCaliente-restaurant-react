@@ -1,0 +1,55 @@
+.container-us {
+  padding: 8rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.us-text .welcome {
+  font-size: 7rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.us-text h1 {
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.us-text p {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+
+.us-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.img1 {
+  grid-column: 1 / -1;
+}
+
+.img1 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.imgs2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.imgs2 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}

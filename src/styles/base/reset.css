@@ -1,0 +1,25 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #333;
+  background: #f8f9fa;
+  overflow-x: hidden;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 10rem;
+}

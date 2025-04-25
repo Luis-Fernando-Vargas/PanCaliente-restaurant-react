@@ -1,0 +1,81 @@
+/* src/pages/Checkout.css */
+.checkout-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fffbea;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.checkout-container h2,
+.checkout-container h3 {
+  margin-bottom: 1rem;
+}
+
+.checkout-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.checkout-summary li {
+  margin-bottom: 0.5rem;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-form input {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.btn-confirmar {
+  padding: 0.75rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-confirmar:hover {
+  background-color: #218838;
+}
+
+.checkout-success {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.checkout-success {
+  text-align: center;
+  padding: 2rem;
+}
+
+.checkout-success h2 {
+  color: #2ecc71;
+  margin-bottom: 1rem;
+}
+
+.btn-home {
+  margin-top: 1.5rem;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-home:hover {
+  background-color: #219150;
+}

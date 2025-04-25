@@ -1,0 +1,102 @@
+@media (max-width: 1200px) {
+  .container {
+    margin: 0 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    margin: 0 auto;
+  }
+  
+  .container-us,
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .us-images {
+    margin-top: 4rem;
+  }
+  
+  /* Menú hamburguesa */
+  .navigation {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.98);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease;
+    z-index: 100;
+    padding-top: 80px;
+  }
+  
+  .navigation.active {
+    right: 0;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .btn-close {
+    display: block;
+  }
+  
+  .full-screen {
+    display: block;
+  }
+  
+  .navigation a {
+    font-size: 2.2rem;
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .navigation a::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo h2 {
+    font-size: 3.5rem;
+  }
+  
+  .logo h3 {
+    font-size: 2rem;
+  }
+  
+  .header-text h2 {
+    font-size: 3.5rem;
+  }
+  
+  .us-text h1,
+  .dishes-text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .buttons-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+  
+  .header-text h2 {
+    font-size: 2.5rem;
+  }
+  
+  .navigation {
+    width: 80%;
+  }
+}
