@@ -1,6 +1,5 @@
-// src/App.jsx
-import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 
 import Header from './components/Header';
 import About from './components/About';
@@ -9,6 +8,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CartSidebar from './components/CartSidebar';
 import Checkout from './pages/Checkout';
+import Admin from './pages/Admin';
+
 import { useCart } from './context/CartContext';
 
 import './styles/base/reset.css';
@@ -52,6 +53,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainContent />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </Router>
   );

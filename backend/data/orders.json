@@ -1,0 +1,24 @@
+[
+  {
+    "customer": {
+      "name": "LUIS FERNANDO VARGAS PENA",
+      "address": "60 RUE GRAVELLE",
+      "phone": "5145597073"
+    },
+    "items": [
+      {
+        "id": 3,
+        "category": "breakfast",
+        "image": "/assets/images/beef rib broth.jpg",
+        "title": "Beef Rib Broth",
+        "description": "Beef rib broth, arepa, bread, cheese, and hot chocolate",
+        "price": "$12",
+        "quantity": 1
+      }
+    ],
+    "total": 12,
+    "id": 1752783250822,
+    "status": "pending",
+    "date": "2025-07-17T20:14:10.822Z"
+  }
+]

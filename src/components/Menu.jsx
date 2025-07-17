@@ -121,9 +121,10 @@ const Menu = () => {
     }
   ];
 
-  const filteredDishes = activeFilter === 'all'
-    ? dishes
-    : dishes.filter(dish => dish.category === activeFilter);
+  const filteredDishes =
+    activeFilter === 'all'
+      ? dishes
+      : dishes.filter(dish => dish.category === activeFilter);
 
   const handleAddToCart = (dish) => {
     addToCart(dish);
@@ -134,32 +135,48 @@ const Menu = () => {
     <section className="menu container" id="menu">
       <h2 className="dishes-text">Menu</h2>
       <div className="buttons-menu">
-        <button className={`btn blue-btn ${activeFilter === 'all' ? 'active' : ''}`} onClick={() => setActiveFilter('all')}>All Dishes</button>
-        <button className={`btn blue-btn ${activeFilter === 'breakfast' ? 'active' : ''}`} onClick={() => setActiveFilter('breakfast')}>Breakfast</button>
-        <button className={`btn blue-btn ${activeFilter === 'lunch' ? 'active' : ''}`} onClick={() => setActiveFilter('lunch')}>Lunch</button>
-        <button className={`btn blue-btn ${activeFilter === 'regular-lunch' ? 'active' : ''}`} onClick={() => setActiveFilter('regular-lunch')}>Regular Lunch</button>
+        <button
+          className={`btn blue-btn ${activeFilter === 'all' ? 'active' : ''}`}
+          onClick={() => setActiveFilter('all')}
+        >
+          All Dishes
+        </button>
+        <button
+          className={`btn blue-btn ${activeFilter === 'breakfast' ? 'active' : ''}`}
+          onClick={() => setActiveFilter('breakfast')}
+        >
+          Breakfast
+        </button>
+        <button
+          className={`btn blue-btn ${activeFilter === 'lunch' ? 'active' : ''}`}
+          onClick={() => setActiveFilter('lunch')}
+        >
+          Lunch
+        </button>
+        <button
+          className={`btn blue-btn ${activeFilter === 'regular-lunch' ? 'active' : ''}`}
+          onClick={() => setActiveFilter('regular-lunch')}
+        >
+          Regular Lunch
+        </button>
       </div>
+
       <div className="dishes">
         {filteredDishes.map(dish => (
           <div className="dish" key={dish.id} data-dish={dish.category}>
             <img src={dish.image} alt={dish.title} loading="lazy" />
             <h2>{dish.title}</h2>
-            <div className='descriptionPrice'>
+            <div className="descriptionPrice">
+              <p>{dish.description}</p>
               <div className="price">
                 <p>{dish.price}</p>
-                <button 
-  aria-label={`Add ${dish.title} to cart`} 
-  onClick={(e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    handleAddToCart(dish);
-  }}
->
-  <i className="fa-solid fa-basket-shopping"></i>
-</button>
-
+                <button
+                  aria-label={`Add ${dish.title} to cart`}
+                  onClick={() => handleAddToCart(dish)}
+                >
+                  <i className="fa-solid fa-basket-shopping"></i>
+                </button>
               </div>
-              <p>{dish.description}</p>
             </div>
           </div>
         ))}

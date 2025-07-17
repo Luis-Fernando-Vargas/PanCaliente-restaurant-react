@@ -1,0 +1,24 @@
+[
+  {
+    "customer": {
+      "name": "LUIS FERNANDO VARGAS PENA",
+      "address": "60 RUE GRAVELLE",
+      "phone": "5145597073"
+    },
+    "items": [
+      {
+        "id": 2,
+        "category": "breakfast",
+        "image": "/assets/images/eggs-rice-beans.webp",
+        "title": "Heated Beans",
+        "description": "Rice with red beans, arepa, fried egg, bread, cheese, and hot chocolate",
+        "price": "$12",
+        "quantity": 1
+      }
+    ],
+    "total": 12,
+    "id": 1752782335824,
+    "status": "completed",
+    "date": "2025-07-17T19:58:55.824Z"
+  }
+]

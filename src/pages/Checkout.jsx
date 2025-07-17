@@ -17,18 +17,33 @@ const Checkout = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setCartItems([]);
-    localStorage.removeItem('cart');
-
-  };
-
   const total = cartItems.reduce((sum, item) => {
     const price = parseFloat(item.price.replace('$', '')) || 0;
     return sum + price * item.quantity;
   }, 0);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const orderData = {
+      customer: form,
+      items: cartItems,
+      total
+    };
+
+    fetch('http://localhost:5000/api/orders', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(orderData)
+    })
+      .then(res => res.json())
+      .then(data => {
+        console.log('Order created:', data);
+        setSubmitted(true);
+        setCartItems([]);
+        localStorage.removeItem('cart');
+      })
+      .catch(err => console.error('Error sending order:', err));
+  };
 
   if (submitted) {
     return (
@@ -37,7 +52,6 @@ const Checkout = () => {
         <p>Your order has been placed successfully and is being processed.</p>
         <button className="btn-home" onClick={() => navigate('/')}>
           Return to Home
-          
         </button>
       </div>
     );
@@ -106,7 +120,6 @@ const Checkout = () => {
 
         <button type="submit" className="btn-confirmar">Confirm Order</button>
       </form>
-
     </div>
   );
 };
