@@ -4,23 +4,36 @@
 ---
 
 ## 📝 Description
-**Pan Caliente Restaurant** is an interactive web application built with **React** for showcasing the restaurant's menu, managing orders, and processing checkout. It offers a responsive and user-friendly interface that allows customers to explore the menu, add items to the cart, and finalize their orders.
-
-This project was created to practice React development, state management with Context API, and routing using **React Router DOM**.
+**Pan Caliente Restaurant** Pan Caliente Restaurant is a full-stack interactive web application for showcasing the restaurant's menu, managing orders, and processing checkout.
+It now includes an **admin panel** for managing products, orders, contact messages, and subscribers.
+The project demonstrates React frontend development, state management, backend API integration, and basic CRUD functionality on both client and server sides.
 
 ---
 
 ## ✅ Features
+
+**Customer-side**
 - 🍽️ View dynamic **menu categories** (Breakfast, Lunch, etc.)
 - 🛒 **Add, remove, and accumulate quantities** in the shopping cart
 - 🏷️ **Product filtering** by categories
 - 💳 **Checkout page** for order confirmation
 - 📱 **Responsive design** for mobile and desktop
 - ⚡ **Lazy loading** for faster image rendering
+- ✉️ Contact form with validation and message storage
+- 🔔 Subscribe to newsletter with email validation
 
+**Admin-side**
+- 🔐 Login-protected admin panel
+- 🧾 View and manage customer orders (mark as completed, archive, restore, delete)
+- 🗂️ Manage products (add, toggle availability, delete)
+- 📬 View and delete contact messages
+- 📨 View and delete subscribers
+- 🖥️ Simple backend with JSON file storage for orders, products, messages, subscribers
 ---
 
 ## 🛠 Technologies Used
+
+**Frontend**
 - **React** – Frontend library for building user interfaces
 - **Vite** – Fast build tool for rapid development
 - **React Router DOM** – Routing for navigation
@@ -28,6 +41,13 @@ This project was created to practice React development, state management with Co
 - **CSS** – Custom styling
 - **Vercel** – Continuous deployment
 
+**Backend**
+- Node.js + Express – API server
+- JSON files – Data persistence
+- CORS, path, fs – Node utilities
+
+**Deployment**
+- **Vercel** – Continuous deployment
 ---
 
 ## 🖼️ Screenshot
@@ -55,7 +75,12 @@ This project was created to practice React development, state management with Co
     npm install
     ```
 
-4. **Start the development server:**
+4. **Start the development servers:**
+   **Backend**
+    ```bash
+    node backend/server.js
+    ```
+   **Forntend**
     ```bash
     npm run dev
     ```
